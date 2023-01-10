@@ -21,7 +21,7 @@ header {
 
 .icon {
   height: 44px;
-  top: 0px;
+  top: 0s;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -31,17 +31,17 @@ header {
   padding-left: 12px;
   width: 54px;
   height: 16px;
-  left: 0px;
-  top: calc(50% - 16px/2 + 0.5px);
+  left: 0;
+  top: calc(50% - 16px / 2 + 0.5px);
   margin-left: 21px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
   letter-spacing: -0.28px;
-  color: #fff;  
+  color: #fff;
 }
 
 .bar {
@@ -80,4 +80,53 @@ header {
 .headline {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  height: 590px;
+  left: 0;
+  padding: 120px 24px;
+  gap: 12px;
+  background: #1c1a19;
+}
+
+h1 {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+h2 {
+  width: 327px;
+  height: 27px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+p {
+  width: 327px;
+  height: 123px;
+  padding-top: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
