@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 6968px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 682px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 92px;
+  background: #3c3a39;
+}
+
+.icon {
+  height: 44px;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time {
+  padding-left: 12px;
+  width: 54px;
+  height: 16px;
+  left: 0px;
+  top: calc(50% - 16px/2 + 0.5px);
+  margin-left: 21px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  color: #fff;  
+}
+
+.bar {
+  width: 66.66px;
+  height: 11.34px;
+  top: 17.33px;
+  margin-right: 14.67px;
+  background-image: url(images/battery-wifi-phone.png);
+  background-position: top right;
+}
+
+.toolbar {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 77px;
+  height: 24px;
+  margin-left: 24px;
+  background-image: url(images/logo1.png);
+  background-repeat: no-repeat;
+}
+
+.menu {
+  width: 18px;
+  height: 12px;
+  margin-right: 35px;
+  background-image: url(images/menu.png);
+  background-position: top right;
+}
+
+
