@@ -77,4 +77,7 @@ header {
   background-position: top right;
 }
 
-
+.headline {
+  display: flex;
+  flex-direction: column;
+}
