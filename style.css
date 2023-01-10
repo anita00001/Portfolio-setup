@@ -130,3 +130,24 @@ p {
   order: 2;
   flex-grow: 0;
 }
+
+.social_media {
+  width: 200px;
+  height: 40px;
+  margin-top: 22px;
+  background-image: url(images/SocialMedia.png);
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.bg_img {
+  position: absolute;
+  height: 256.88px;
+  width: 261.83px;
+  bottom: -8%;
+  left: 32%;
+  background-image: url(images/bg-img.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
