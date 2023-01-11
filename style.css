@@ -111,7 +111,7 @@ footer {
   justify-content: space-between;
 }
 
-.social_media {
+ul {
   margin-top: 12px;
   display: flex;
 }
