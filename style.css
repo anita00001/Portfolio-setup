@@ -1,90 +1,72 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  position: relative;
-  height: 6968px;
+  /* height: 6968px; */
 }
 
 main {
+  height: 682px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 682px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
+.toolbar {
   height: 92px;
+  display: flex;
+  flex-wrap: wrap;
   background: #3c3a39;
 }
 
-.icon {
-  height: 44px;
-  top: 0s;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .time {
+  width: 50%;
   padding-left: 12px;
-  width: 54px;
-  height: 16px;
-  left: 0;
-  top: calc(50% - 16px / 2 + 0.5px);
   margin-left: 21px;
+  margin-top: 16px;
+  top: calc(50% - 16px / 2 + 0.5px);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  text-align: center;
   letter-spacing: -0.28px;
   color: #fff;
 }
 
 .bar {
+  margin-left: auto;
   width: 66.66px;
   height: 11.34px;
-  top: 17.33px;
+  margin-top: 17.33px;
   margin-right: 14.67px;
   background-image: url(images/battery-wifi-phone.png);
   background-position: top right;
-}
-
-.toolbar {
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  background-repeat: no-repeat;
 }
 
 .logo {
-  width: 77px;
+  margin-top: auto;
+  width: 50%;
   height: 24px;
   margin-left: 24px;
+  margin-bottom: 12px;
   background-image: url(images/logo1.png);
   background-repeat: no-repeat;
 }
 
 .menu {
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 35px;
+  margin-bottom: 18.5px;
   width: 18px;
   height: 12px;
-  margin-right: 35px;
   background-image: url(images/menu.png);
   background-position: top right;
 }
 
 .headline {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   height: 590px;
-  left: 0;
   padding: 120px 24px;
-  gap: 12px;
   background: #1c1a19;
 }
 
@@ -111,9 +93,6 @@ h2 {
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 p {
@@ -126,28 +105,31 @@ p {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .social_media {
-  width: 200px;
-  height: 40px;
-  margin-top: 22px;
-  background-image: url(images/SocialMedia.png);
-  flex: none;
-  order: 3;
-  flex-grow: 0;
+  margin-top: 12px;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .bg_img {
-  position: absolute;
-  height: 256.88px;
-  width: 261.83px;
-  bottom: -8%;
-  left: 32%;
   background-image: url(images/bg-img.png);
   background-position: bottom right;
   background-repeat: no-repeat;
+  height: 256.88px;
+  width: 261.83px;
+  margin-top: -20%;
+  margin-right: -20px;
 }
