@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 682px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  height: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #3c3a39;
+}
+
+.time {
+  width: 50%;
+  padding-left: 12px;
+  margin-left: 21px;
+  margin-top: 16px;
+  top: calc(50% - 16px / 2 + 0.5px);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.28px;
+  color: #fff;
+}
+
+.bar {
+  margin-left: auto;
+  width: 66.66px;
+  height: 11.34px;
+  margin-top: 17.33px;
+  margin-right: 14.67px;
+  background-image: url(images/battery-wifi-phone.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin-top: auto;
+  width: 50%;
+  height: 24px;
+  margin-left: 24px;
+  margin-bottom: 12px;
+  background-image: url(images/logo1.png);
+  background-repeat: no-repeat;
+}
+
+.menu {
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: 35px;
+  margin-bottom: 18.5px;
+  width: 18px;
+  height: 12px;
+  background-image: url(images/menu.png);
+  background-position: top right;
+}
+
+.headline {
+  height: 590px;
+  padding: 120px 24px;
+  background: #1c1a19;
+}
+
+h1 {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+h2 {
+  width: 327px;
+  height: 27px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+p {
+  width: 327px;
+  height: 123px;
+  padding-top: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  margin-top: 12px;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.bg_img {
+  background-image: url(images/bg-img.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 256.88px;
+  width: 261.83px;
+  margin-top: -20%;
+  margin-right: -20px;
+}
