@@ -218,25 +218,39 @@ hr {
 
 button {
   align-items: center;
-  padding: 0.5rem;
   height: 48px;
-  background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   text-align: center;
-  color: #fff;
-}
-
-button:hover {
-  text-decoration: underline;
-}
-
-.describe button {
   border: none;
+  padding: 0.5rem;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  background-color: #ff6b00;
+  color: #fff;
+}
+
+.button:active {
+  background: #f00;
+  color: #fff;
+  cursor: progress;
+}
+
+button:hover {
+  background: #f2d9b6;
+  color: #ff6b00;
+  cursor: pointer;
+  outline-color: transparent;
+  outline-style: solid;
+  box-shadow: 0 0 0 2px #ff6b00;
+}
+
+.button:disabled {
+  background: #fff;
+  color: #1c1a19;
+  cursor: pointer;
 }
 
 .frame {
@@ -323,14 +337,12 @@ button:hover {
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
-  margin-right: auto;
-  margin-left: auto;
   height: 258.17px;
 }
 
 .resume button {
-  width: auto;
-  margin: 1rem auto 0 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .competence {
