@@ -337,7 +337,7 @@ button:hover {
   margin: -5rem -20.8rem 0 auto;
 }
 
-.language_framework_skill {
+.competence {
   margin: 5rem 0;
   height: auto;
   display: flex;
@@ -365,13 +365,13 @@ button:hover {
   height: 3vh;
 }
 
-.language_framework_skill ul {
+.competence ul {
   display: flex;
   flex-direction: column;
   margin: 1rem;
 }
 
-.language_framework_skill li {
+.competence li {
   width: auto;
   height: 24px;
   padding: 1rem;
