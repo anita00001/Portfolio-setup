@@ -198,6 +198,10 @@ hr {
   line-height: 150%;
 }
 
+footer ul {
+  justify-content: center;
+}
+
 .describe ul {
   display: flex;
   list-style-type: none;
@@ -389,4 +393,93 @@ button:hover {
   line-height: 194%;
   text-align: center;
   color: #fff;
+}
+
+.contact_form {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_form h2 {
+  width: 90%;
+  height: auto;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.form-input {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+.form input {
+  width: 90%;
+  border: none;
+  text-align: left;
+  padding: 12px;
+}
+
+.form textarea {
+  width: 90%;
+  border: none;
+  text-align: left;
+  padding: 12px;
+  background: #fbf8f7;
+  margin-bottom: 24px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+
+.summit {
+  width: fit-content;
+  align-self: center;
+  padding: 12px;
+  margin-bottom: 5rem;
+}
+
+footer hr {
+  padding: 1rem;
+  width: 100%;
+  height: 1px;
+}
+
+footer .bottom_line {
+  width: 30%;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
+  margin-left: 9rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
