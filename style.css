@@ -394,7 +394,7 @@ button:hover {
 .contact_form {
   width: 100%;
   height: auto;
-  background: #e5e5e5;
+  background: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -412,4 +412,53 @@ button:hover {
   line-height: 138%;
   text-align: center;
   color: #172b4d;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.form-input {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+.form input {
+  border: none;
+  text-align: left;
+  padding: 12px;
+}
+
+.form textarea {
+  width: 100%;
+  border: none;
+  text-align: left;
+  padding: 12px;
+  background: #fbf8f7;
+  margin-bottom: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3C3A39;
+}
+
+.summit {
+  width: fit-content;
+  align-self: center;
+  padding: 12px;
+  margin-bottom: 50px;
 }
