@@ -390,3 +390,26 @@ button:hover {
   text-align: center;
   color: #fff;
 }
+
+.contact_form {
+  width: 100%;
+  height: auto;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_form h2 {
+  width: 90%;
+  height: auto;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  text-align: center;
+  color: #172b4d;
+}
