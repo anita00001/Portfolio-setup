@@ -440,13 +440,14 @@ button:hover {
 }
 
 .form input {
+  width: 90%;
   border: none;
   text-align: left;
   padding: 12px;
 }
 
 .form textarea {
-  width: 100%;
+  width: 90%;
   border: none;
   text-align: left;
   padding: 12px;
