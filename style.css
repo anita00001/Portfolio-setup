@@ -198,6 +198,10 @@ hr {
   line-height: 150%;
 }
 
+footer ul {
+  justify-content: center;
+}
+
 .describe ul {
   display: flex;
   list-style-type: none;
@@ -427,7 +431,7 @@ button:hover {
   flex-direction: column;
   text-align: left;
   margin-left: 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -448,12 +452,12 @@ button:hover {
   padding: 12px;
   background: #fbf8f7;
   margin-bottom: 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .summit {
@@ -461,10 +465,6 @@ button:hover {
   align-self: center;
   padding: 12px;
   margin-bottom: 5rem;
-}
-
-footer ul {
-  justify-content: center;
 }
 
 footer hr {
