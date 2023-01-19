@@ -13,7 +13,7 @@ header {
   background: #3c3a39;
   display: flex;
   justify-content: center;
-  height: 72px;
+  height: auto;
 }
 
 .toolbar {
@@ -68,6 +68,10 @@ header {
   height: 12px;
   background-image: url(images/menu.png);
   background-position: top right;
+}
+
+.open_menu {
+  display: none;
 }
 
 .headline {
@@ -357,7 +361,7 @@ button:hover {
   margin-left: 1rem;
 }
 
-.competence {
+.technology {
   margin-top: 5rem;
   margin-bottom: 5rem;
   width: 100%;
@@ -387,12 +391,12 @@ button:hover {
   height: 3vh;
 }
 
-.competence ul {
+.technology ul {
   display: flex;
   flex-direction: column;
 }
 
-.competence ul li {
+.technology ul li {
   padding: 1rem;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -469,7 +473,7 @@ button:hover {
   color: #3c3a39;
 }
 
-.summit {
+.submit {
   width: fit-content;
   align-self: center;
   padding: 12px;
@@ -496,6 +500,10 @@ footer .bottom_line {
 /* Media query DESKTOP version */
 
 @media all and (min-width: 768px) {
+  
+  header {
+    height: 4.5rem;
+  }
   .headline {
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -586,16 +594,6 @@ line-height: 133%;
     margin-left: 2.25rem;
     padding-top: 5.5rem;
   }
-  
-  li {
-    /* margin-right: 1rem;
-    list-style-type: none;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px; */
-  }
 
   .works {
     width: 100%;
@@ -645,18 +643,22 @@ line-height: 133%;
   
   .feature .img {
     width: 65%;
-    height: auto;
+    height: 448px;
     background-image: url(images_2/ImgPlaceholder.png);
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: center;
     background-size: cover;
   }
   
   .describe {
     width: 35%;
+    padding-top: 0;
+    margin-top: 0;
   }
   
   .describe h2 {
+    padding-top: 0;
+    margin-top: 0;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -666,6 +668,7 @@ line-height: 133%;
   }
   
   .describe p {
+    padding-bottom: 0;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -676,6 +679,8 @@ line-height: 133%;
   }
 
   .describe ul {
+    padding-top: 24px;
+    padding-left: 0.5rem;
     flex-direction: row;
     list-style-type: none;
   }
@@ -688,8 +693,8 @@ line-height: 133%;
     font-weight: 500;
     font-size: 15px;
     color: #091e42;
-    padding: 0.5rem;
-    margin: 0.05rem;
+    padding:0.75rem;
+    margin: 0;
   }
 
 /* Frame */
@@ -753,29 +758,32 @@ line-height: 133%;
     border: none;
   }
 
+/* About me */
+
   .about_me {
     padding-top: 6rem;
     width: 100%;
-    height: 435px;
+    height: auto;
     background: #1c1a19;
     display: flex;
     flex-direction: column;
     background-image: url(images_4/About-bg-img.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-x: right;
+    background-position-y: 6rem;
   }
 
   .description {
     margin-left: 9rem;
     width: 40%;
-    border: 2px solid red;
   }
   
   .description h2 {
     margin-top: 0rem;
     font-size: 72px;
     line-height: 88px;
-    text-align: center;
+    text-align: left;
+    padding: 1rem;
     height: 5rem;
     color: #ff6b00;
   }
@@ -787,12 +795,180 @@ line-height: 133%;
   
   .resume {
     margin-left: 9rem;
+    margin-bottom: 0;
+    padding-bottom: 0rem;
     width: 40%;
-    border: 2px solid red;
+    height: auto;
+    background-image: none;
   }
   
   .resume button {
     margin-top: 1rem;
     margin-left: 1rem;
   }
+
+  .about_me hr {
+    width: 70%;
+    align-self: center;
+    margin-top: 8.5rem;
+    border: 1px solid #fff;
+  }
+
+  .technology {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lang {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    height: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+  }
+  
+  .lang img {
+    width: 3vh;
+    height: 3vh;
+  }
+  
+  .technology ul{
+    display: flex;
+    flex-direction: row;
+    gap: 11rem;
+  }
+
+  .technology ul .tech {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: left;
+    padding-top: 2rem;
+    margin: 0;
+  }
+  
+  .technology ul li {
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 194%;
+    text-align: center;
+    color: #fff;
+  }
+
+
+  /* Contact */
+
+  .contact_form {
+    width: 80%;
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 8.5rem;
+    padding-top: 8rem;
+  }
+  
+  .contact_form h2 {
+    width: 80%;
+    height: auto;
+    margin-bottom: 14rem;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: left;
+    color: #262626;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 8rem;
+  }
+  
+  .form-input {
+    margin:0;
+    padding: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #979493;
+  }
+
+  .form-input hr {
+    width: 88%;
+  }
+  
+  .form input {
+    width: 80%;
+    border: none;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .form textarea {
+    width: 90%;
+    border: none;
+    text-align: left;
+    padding: 12px;
+    margin-top: 1rem;
+    background: #fbf8f7;
+    margin-bottom: 24px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #3c3a39;
+  }
+  
+  .submit {
+    width: fit-content;
+    align-self: flex-start;
+    padding: 12px;
+    margin-left: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  
+  footer hr {
+    padding: 1rem;
+    width: 100%;
+    height: 1px;
+  }
+  
+  footer .bottom_line {
+    width: 30%;
+    height: 5px;
+    background: #0d151e;
+    border-radius: 10px;
+    margin-left: 9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
 }
