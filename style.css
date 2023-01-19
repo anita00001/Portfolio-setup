@@ -4,7 +4,7 @@
 }
 
 main {
-  height: 682px;
+  /* height: 682px; */
   display: flex;
   flex-direction: column;
 }
@@ -482,4 +482,79 @@ footer .bottom_line {
   margin-left: 9rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+
+/* Media query DESKTOP version */
+
+@media all and (min-width: 1440px) {
+  .headline {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 5.5rem;
+    padding-top: 12rem;
+    padding-bottom: 16rem;
+    background-image: url(images_4/Illustration-header.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+  
+  .intro {
+    padding:0;
+    margin-right: 50%;
+  }
+  
+  h1 {
+    height: auto;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 113%;
+    letter-spacing: 0.37px;
+    color: #f55800;
+  }
+  
+  h2 {
+    margin: 1rem 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 138%;
+    color: #fff;
+  }
+  
+  p {
+    height: auto;
+    padding: 1.5rem 0 1rem 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #f4f5f7;
+  }
+  
+  .connect_with {
+    width: fit-content;
+    background-image: none;
+  }
+  
+  ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 2.25rem;
+    padding-top: 5.5rem;
+  }
+  
+  li {
+    /* margin-right: 1rem;
+    list-style-type: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px; */
+  }
 }
