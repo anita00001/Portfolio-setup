@@ -601,7 +601,8 @@ footer .bottom_line {
     flex-direction: row;
     gap: 1.5rem;
     margin-top: 0;
-    padding: 0rem;
+    padding: 0;
+    padding-bottom: 1.5rem;
   }
   
   .feature .img {
@@ -651,5 +652,65 @@ footer .bottom_line {
     color: #091e42;
     padding: 0.5rem;
     margin: 0.05rem;
+  }
+
+/* Frame */
+
+  .frame {
+    width: 80%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0;
+  }
+  
+  .card {
+    width: 100%;
+    height: 435px;
+    background: url(images_2/Bg_ImgCard.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .card h2 {
+    height: 81px;
+    margin-top: 6rem;
+    padding-left: 1rem;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 138%;
+    color: #fff;
+  }
+  
+  .card p {
+    height: 87px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .card ul {
+    margin-top: -4.1rem;
+    flex-direction: row;
+  }
+  
+  .card li {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 0.5rem;
+  }
+  
+  .card button {
+    width: 100%;
+    margin: 1rem 0 0 0;
+    border: none;
   }
 }
