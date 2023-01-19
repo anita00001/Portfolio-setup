@@ -9,6 +9,13 @@ main {
   flex-direction: column;
 }
 
+header {
+  background: #3c3a39;
+  display: flex;
+  justify-content: center;
+  height: 72px;
+}
+
 .toolbar {
   width: 100%;
   height: 92px;
@@ -488,7 +495,7 @@ footer .bottom_line {
 
 /* Media query DESKTOP version */
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 768px) {
   .headline {
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -499,7 +506,38 @@ footer .bottom_line {
     background-position: top right;
     background-repeat: no-repeat;
   }
-  
+
+  .toolbar {
+    display: none;
+  }
+
+  .open_menu {
+     width: 85%;
+     height: auto;
+     display: flex;
+     justify-content: space-between;
+     place-items: center;
+     /* align-items: center; */
+     /* align-content: center; */
+  }
+
+  .open_menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .open_menu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 133%;
+  }
+
   .intro {
     padding:0;
     margin-right: 50%;
@@ -591,7 +629,7 @@ footer .bottom_line {
   
   hr {
     border: 1px solid #212121;
-    width: 70%;
+    width: 60%;
     margin: auto 1rem;
   }
 
@@ -664,6 +702,7 @@ footer .bottom_line {
     grid-template-rows: 1fr 1fr;
     gap: 1.5rem;
     padding: 0;
+    padding-bottom: 8rem;
   }
   
   .card {
@@ -712,5 +751,48 @@ footer .bottom_line {
     width: 100%;
     margin: 1rem 0 0 0;
     border: none;
+  }
+
+  .about_me {
+    padding-top: 6rem;
+    width: 100%;
+    height: 435px;
+    background: #1c1a19;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images_4/About-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .description {
+    margin-left: 9rem;
+    width: 40%;
+    border: 2px solid red;
+  }
+  
+  .description h2 {
+    margin-top: 0rem;
+    font-size: 72px;
+    line-height: 88px;
+    text-align: center;
+    height: 5rem;
+    color: #ff6b00;
+  }
+  
+  .description p {
+    text-align: left;
+    padding: 1rem;
+  }
+  
+  .resume {
+    margin-left: 9rem;
+    width: 40%;
+    border: 2px solid red;
+  }
+  
+  .resume button {
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
 }
