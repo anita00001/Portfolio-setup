@@ -807,7 +807,6 @@ footer .bottom_line {
     height: 1px;
     background: #dfe1e6;
   }
-  
   .about_me hr {
     width: 70%;
     align-self: center;
@@ -824,7 +823,6 @@ footer .bottom_line {
     flex-direction: column;
     align-items: center;
   }
-  
   .lang {
     display: flex;
     gap: 1rem;
@@ -839,12 +837,10 @@ footer .bottom_line {
     font-size: 32px;
     line-height: 138%;
   }
-  
   .lang img {
     width: 3vh;
     height: 3vh;
   }
-  
   .technology ul {
     display: flex;
     flex-direction: row;
@@ -859,7 +855,6 @@ footer .bottom_line {
     padding-top: 2rem;
     margin: 0;
   }
-  
   .technology ul li {
     padding: 1rem;
     font-family: 'Inter', sans-serif;
@@ -870,7 +865,6 @@ footer .bottom_line {
     text-align: center;
     color: #fff;
   }
-  
   .contact_form {
     width: 80%;
     height: auto;
@@ -881,7 +875,6 @@ footer .bottom_line {
     padding-left: 8.5rem;
     padding-top: 8rem;
   }
-  
   .contact_form h2 {
     width: 80%;
     height: auto;
@@ -894,14 +887,12 @@ footer .bottom_line {
     text-align: left;
     color: #262626;
   }
-  
   .form {
     display: flex;
     flex-direction: column;
     align-items: left;
     margin-top: 8rem;
   }
-  
   .form-input {
     margin: 0;
     padding: 0;
@@ -921,14 +912,12 @@ footer .bottom_line {
   .form-input hr {
     width: 88%;
   }
-  
   .form input {
     width: 80%;
     border: none;
     text-align: left;
     padding: 12px;
   }
-  
   .form textarea {
     width: 90%;
     border: none;
@@ -944,7 +933,6 @@ footer .bottom_line {
     line-height: 24px;
     color: #3c3a39;
   }
-  
   .submit {
     width: fit-content;
     align-self: flex-start;
@@ -952,7 +940,6 @@ footer .bottom_line {
     margin-left: 1.5rem;
     margin-bottom: 5rem;
   }
-  
   footer .bottom_line {
     display: none;
   }
