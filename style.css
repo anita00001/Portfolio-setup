@@ -170,6 +170,7 @@ hr {
 }
 
 .feature .img {
+  width: 100%;
   height: 237px;
   background-image: url(images_2/ImgPlaceholder.png);
   background-repeat: no-repeat;
@@ -556,5 +557,99 @@ footer .bottom_line {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px; */
+  }
+
+  .works {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #e5e5e5;
+    width: 100%;
+    align-items: center;
+  }
+
+  .title {
+    width: 80%;
+    padding-top: 8.5rem;
+    padding-bottom: 7rem;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .title h2 {
+    width: fit-content;
+    margin: 0;
+    height: auto;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 130%;
+    align-items: left;
+    color: #091e42;
+  }
+  
+  hr {
+    border: 1px solid #212121;
+    width: 70%;
+    margin: auto 1rem;
+  }
+
+  .feature {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 0;
+    padding: 0rem;
+  }
+  
+  .feature .img {
+    width: 65%;
+    height: auto;
+    background-image: url(images_2/ImgPlaceholder.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: cover;
+  }
+  
+  .describe {
+    width: 35%;
+  }
+  
+  .describe h2 {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #091e42;
+    font-size: 40px;
+    line-height: 130%;
+  }
+  
+  .describe p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #091e42;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .describe ul {
+    flex-direction: row;
+    list-style-type: none;
+  }
+  
+  .describe li {
+    width: fit-content;
+    border: 1px solid #8993a4;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #091e42;
+    padding: 0.5rem;
+    margin: 0.05rem;
   }
 }
