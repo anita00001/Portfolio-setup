@@ -956,19 +956,18 @@ line-height: 133%;
   }
   
   footer hr {
-    padding: 1rem;
+    padding: 0rem;
     width: 100%;
     height: 1px;
+    background: #dfe1e6;
   }
   
   footer .bottom_line {
-    width: 30%;
-    height: 5px;
-    background: #0d151e;
-    border-radius: 10px;
-    margin-left: 9rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    display: none;
   }
-  
+  footer ul {
+    margin: 0;
+    padding: 1.5rem;
+    flex-direction: row;
+  }
 }
