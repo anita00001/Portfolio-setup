@@ -716,56 +716,28 @@ footer .bottom_line {
   }
 
   .card {
+    position: relative;
     padding-left: 0;
     margin-left: 0;
     width: 100%;
-    height: auto;
+    height: 435px;
     display: flex;
     flex-direction: column;
+    background: none;
     justify-content: flex-end;
     padding-bottom: 1rem;
+
     background: url(images_2/Bg_ImgCard.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  .card .mobile {
+  .card:hover .clear {
     display: none;
   }
 
-  .card1 {
-    padding-bottom: 0;
-    background: url(images_4/card-bg-img1-0.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .card1 h2,
-  .card1 p,
-  .card1 ul {
-    display: none;
-  }
-
-  .card2,
-  .card5 {
-    background: url(images_4/card-bg-img2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .card2 button,
-  .card3 button,
-  .card4 button,
-  .card5 button,
-  .card6 button {
-    display: none;
-  }
-
-  .card3,
-  .card6 {
-    background: url(images_4/card-bg-img3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+  .desktop {
+    display: block;
   }
 
   .card h2 {
@@ -797,6 +769,12 @@ footer .bottom_line {
     flex-direction: row;
   }
 
+  .card:hover button {
+    display: block;
+    position: relative;
+    top: 24px;
+  }
+
   .card li {
     color: #fff;
     background: rgba(255, 255, 255, 0.24);
@@ -805,8 +783,62 @@ footer .bottom_line {
   }
 
   .card button {
-    margin-top: 23rem;
     width: 100%;
+  }
+
+  .card1,
+  .card4 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card2,
+  .card5 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card3,
+  .card6 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card1 button,
+  .card2 button,
+  .card3 button,
+  .card4 button,
+  .card5 button,
+  .card6 button {
+    display: none;
+  }
+
+  .card1:hover,
+  .card4:hover {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card2:hover,
+  .card5:hover {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card3:hover,
+  .card6:hover {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card .mobile {
+    display: none;
   }
 
   .about_me {
