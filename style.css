@@ -150,7 +150,6 @@ li {
   display: flex;
   flex-direction: column;
   background: #e5e5e5;
-  width: 100%;
   align-items: center;
 }
 
@@ -283,6 +282,9 @@ button:hover {
   height: auto;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_2/Bg_ImgCard.png);
   background-repeat: round;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 .desktop {
@@ -290,7 +292,7 @@ button:hover {
 }
 
 .card h2 {
-  height: 81px;
+  height: auto;
   margin-top: 6rem;
   padding-left: 1rem;
   font-family: 'Crete Round', sans-serif;
@@ -302,7 +304,7 @@ button:hover {
 }
 
 .card p {
-  height: 87px;
+  height: auto;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -603,6 +605,7 @@ footer .bottom_line {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-self: left;
     background: #e5e5e5;
     align-items: center;
   }
@@ -701,17 +704,20 @@ footer .bottom_line {
   }
 
   .frame {
-    width: 80%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1.5rem;
-    padding: 0;
+    justify-items: first baseline;
+    gap: 1rem;
+    margin: 1.5rem;
+    padding-left: 0;
     padding-bottom: 8rem;
   }
 
   .card {
+    padding-left: 0;
+    margin-left: 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -730,6 +736,8 @@ footer .bottom_line {
   .card1 {
     padding-bottom: 0;
     background: url(images_4/card-bg-img1-0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card1 h2,
@@ -741,6 +749,8 @@ footer .bottom_line {
   .card2,
   .card5 {
     background: url(images_4/card-bg-img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card2 button,
@@ -754,6 +764,8 @@ footer .bottom_line {
   .card3,
   .card6 {
     background: url(images_4/card-bg-img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .card h2 {
@@ -779,7 +791,9 @@ footer .bottom_line {
   }
 
   .card ul {
-    margin-top: -4rem;
+    margin-top: -5rem;
+    margin-left: 0.5rem;
+    padding-left: 0.3rem;
     flex-direction: row;
   }
 
@@ -787,7 +801,7 @@ footer .bottom_line {
     color: #fff;
     background: rgba(255, 255, 255, 0.24);
     padding: 0.5rem;
-    margin-right: -0.3rem;
+    margin-right: -0.8rem;
   }
 
   .card button {
