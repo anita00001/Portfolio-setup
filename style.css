@@ -285,6 +285,10 @@ button:hover {
   background-repeat: round;
 }
 
+.desktop {
+  display: none;
+}
+
 .card h2 {
   height: 81px;
   margin-top: 6rem;
@@ -634,15 +638,15 @@ footer .bottom_line {
     width: 80%;
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 0;
     padding: 0;
     padding-bottom: 1.5rem;
   }
 
   .feature .img {
-    width: 65%;
-    height: 448px;
+    width: 60%;
+    height: 28rem;
     background-image: url(images_2/ImgPlaceholder.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -650,12 +654,13 @@ footer .bottom_line {
   }
 
   .describe {
-    width: 35%;
+    width: 40%;
     padding-top: 0;
     margin-top: 0;
   }
 
   .describe h2 {
+    height: auto;
     padding-top: 0;
     margin-top: 0;
     font-family: 'Crete Round', sans-serif;
@@ -699,7 +704,7 @@ footer .bottom_line {
     width: 80%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1.5rem;
     padding: 0;
@@ -708,16 +713,53 @@ footer .bottom_line {
 
   .card {
     width: 100%;
-    height: 435px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
     background: url(images_2/Bg_ImgCard.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .card .mobile {
+    display: none;
+  }
+
+  .card1 {
+    padding-bottom: 0;
+    background: url(images_4/card-bg-img1-0.png);
+  }
+
+  .card1 h2,
+  .card1 p,
+  .card1 ul {
+    display: none;
+  }
+
+  .card2,
+  .card5 {
+    background: url(images_4/card-bg-img2.png);
+  }
+
+  .card2 button,
+  .card3 button,
+  .card4 button,
+  .card5 button,
+  .card6 button {
+    display: none;
+  }
+
+  .card3,
+  .card6 {
+    background: url(images_4/card-bg-img3.png);
+  }
+
   .card h2 {
-    height: 81px;
-    margin-top: 6rem;
+    margin-top: 8rem;
     padding-left: 1rem;
+    height: auto;
     font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -727,7 +769,6 @@ footer .bottom_line {
   }
 
   .card p {
-    height: 87px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -738,7 +779,7 @@ footer .bottom_line {
   }
 
   .card ul {
-    margin-top: -4.1rem;
+    margin-top: -4rem;
     flex-direction: row;
   }
 
@@ -746,12 +787,12 @@ footer .bottom_line {
     color: #fff;
     background: rgba(255, 255, 255, 0.24);
     padding: 0.5rem;
+    margin-right: -0.3rem;
   }
 
   .card button {
+    margin-top: 23rem;
     width: 100%;
-    margin: 1rem 0 0 0;
-    border: none;
   }
 
   .about_me {
@@ -955,5 +996,11 @@ footer .bottom_line {
 
   footer .bottom_line {
     display: none;
+  }
+}
+
+@media all and (min-width: 1380px) {
+  .frame {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
