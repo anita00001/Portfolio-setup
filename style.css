@@ -499,7 +499,7 @@ footer .bottom_line {
   header {
     height: 4.5rem;
   }
-  
+
   .headline {
     flex-direction: row-reverse;
     justify-content: flex-start;
@@ -529,13 +529,13 @@ footer .bottom_line {
     margin-left: 2.25rem;
     padding-top: 5.5rem;
   }
-  
+
   footer ul {
     margin: 0;
     padding: 1.5rem;
     flex-direction: row;
   }
-  
+
   .open_menu ul {
     margin: 0;
     padding: 0;
@@ -568,7 +568,7 @@ footer .bottom_line {
     letter-spacing: 0.37px;
     color: #f55800;
   }
-  
+
   h2 {
     margin: 1rem 0;
     font-family: 'Inter', sans-serif;
@@ -594,7 +594,7 @@ footer .bottom_line {
     width: fit-content;
     background-image: none;
   }
-  
+
   .works {
     width: 100%;
     display: flex;
@@ -623,7 +623,7 @@ footer .bottom_line {
     align-items: left;
     color: #091e42;
   }
-  
+
   hr {
     border: 1px solid #212121;
     width: 60%;
@@ -639,7 +639,7 @@ footer .bottom_line {
     padding: 0;
     padding-bottom: 1.5rem;
   }
-  
+
   .feature .img {
     width: 65%;
     height: 448px;
@@ -648,13 +648,13 @@ footer .bottom_line {
     background-position: center;
     background-size: cover;
   }
-  
+
   .describe {
     width: 35%;
     padding-top: 0;
     margin-top: 0;
   }
-  
+
   .describe h2 {
     padding-top: 0;
     margin-top: 0;
@@ -665,7 +665,7 @@ footer .bottom_line {
     font-size: 40px;
     line-height: 130%;
   }
-  
+
   .describe p {
     padding-bottom: 0;
     font-family: 'Inter', sans-serif;
@@ -682,7 +682,7 @@ footer .bottom_line {
     flex-direction: row;
     list-style-type: none;
   }
-  
+
   .describe li {
     width: fit-content;
     border: 1px solid #8993a4;
@@ -705,7 +705,7 @@ footer .bottom_line {
     padding: 0;
     padding-bottom: 8rem;
   }
-  
+
   .card {
     width: 100%;
     height: 435px;
@@ -713,7 +713,7 @@ footer .bottom_line {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   .card h2 {
     height: 81px;
     margin-top: 6rem;
@@ -725,7 +725,7 @@ footer .bottom_line {
     line-height: 138%;
     color: #fff;
   }
-  
+
   .card p {
     height: 87px;
     font-family: 'Inter', sans-serif;
@@ -736,18 +736,18 @@ footer .bottom_line {
     color: #fff;
     padding: 1rem;
   }
-  
+
   .card ul {
     margin-top: -4.1rem;
     flex-direction: row;
   }
-  
+
   .card li {
     color: #fff;
     background: rgba(255, 255, 255, 0.24);
     padding: 0.5rem;
   }
-  
+
   .card button {
     width: 100%;
     margin: 1rem 0 0 0;
@@ -771,7 +771,7 @@ footer .bottom_line {
     margin-left: 9rem;
     width: 40%;
   }
-  
+
   .description h2 {
     margin-top: 0;
     font-size: 72px;
@@ -781,12 +781,12 @@ footer .bottom_line {
     height: 5rem;
     color: #ff6b00;
   }
-  
+
   .description p {
     text-align: left;
     padding: 1rem;
   }
-  
+
   .resume {
     margin-left: 9rem;
     margin-bottom: 0;
@@ -795,12 +795,12 @@ footer .bottom_line {
     height: auto;
     background-image: none;
   }
-  
+
   .resume button {
     margin-top: 1rem;
     margin-left: 1rem;
   }
-  
+
   footer hr {
     padding: 0;
     width: 100%;
@@ -952,7 +952,7 @@ footer .bottom_line {
     margin-left: 1.5rem;
     margin-bottom: 5rem;
   }
-  
+
   footer .bottom_line {
     display: none;
   }
