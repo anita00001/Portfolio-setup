@@ -726,10 +726,6 @@ footer .bottom_line {
     background: none;
     justify-content: flex-end;
     padding-bottom: 1rem;
-
-    background: url(images_2/Bg_ImgCard.png);
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .card:hover .clear {
@@ -769,10 +765,28 @@ footer .bottom_line {
     flex-direction: row;
   }
 
+  .resume button {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .card1 button,
+  .card2 button,
+  .card3 button,
+  .card4 button,
+  .card5 button,
+  .card6 button {
+    display: none;
+  }
+
+  .card button {
+    width: 100%;
+  }
+
   .card:hover button {
     display: block;
     position: relative;
-    top: 24px;
+    top: 16px;
   }
 
   .card li {
@@ -780,10 +794,6 @@ footer .bottom_line {
     background: rgba(255, 255, 255, 0.24);
     padding: 0.5rem;
     margin-right: -0.8rem;
-  }
-
-  .card button {
-    width: 100%;
   }
 
   .card1,
@@ -807,15 +817,6 @@ footer .bottom_line {
     background-size: cover;
   }
 
-  .card1 button,
-  .card2 button,
-  .card3 button,
-  .card4 button,
-  .card5 button,
-  .card6 button {
-    display: none;
-  }
-
   .card1:hover,
   .card4:hover {
     background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img1-1.png);
@@ -832,7 +833,7 @@ footer .bottom_line {
 
   .card3:hover,
   .card6:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img3.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 200%, rgb(237, 237, 242) 200%), url(images_4/card-bg-img3.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -881,11 +882,6 @@ footer .bottom_line {
     width: 40%;
     height: auto;
     background-image: none;
-  }
-
-  .resume button {
-    margin-top: 1rem;
-    margin-left: 1rem;
   }
 
   footer hr {
