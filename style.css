@@ -485,6 +485,10 @@ button:hover {
   margin-bottom: 5rem;
 }
 
+button {
+  transition-duration: 2s;
+}
+
 footer hr {
   padding: 1rem;
   width: 100%;
