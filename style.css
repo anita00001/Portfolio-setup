@@ -819,7 +819,7 @@ footer .bottom_line {
 
   .card1:hover,
   .card4:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img1-1.png);
+    background: none #f3f3f3, url(images_4/card-bg-img1.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
