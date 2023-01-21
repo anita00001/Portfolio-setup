@@ -184,6 +184,19 @@ hr {
   background-image: url(images_2/ImgPlaceholder.png);
   background-repeat: no-repeat;
   background-position: top;
+  animation: 3s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 40%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .describe {
@@ -244,6 +257,7 @@ button {
   letter-spacing: 0.03em;
   background-color: #ff6b00;
   color: #fff;
+  transition-duration: 2s;
 }
 
 .button:active {
@@ -819,7 +833,7 @@ footer .bottom_line {
 
   .card1:hover,
   .card4:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img1-1.png);
+    background: none #f3f3f3, url(images_4/card-bg-img1.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
