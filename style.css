@@ -184,6 +184,19 @@ hr {
   background-image: url(images_2/ImgPlaceholder.png);
   background-repeat: no-repeat;
   background-position: top;
+  animation: 3s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 40%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .describe {
@@ -244,6 +257,7 @@ button {
   letter-spacing: 0.03em;
   background-color: #ff6b00;
   color: #fff;
+  transition-duration: 2s;
 }
 
 .button:active {
@@ -483,10 +497,6 @@ button:hover {
   align-self: center;
   padding: 12px;
   margin-bottom: 5rem;
-}
-
-button {
-  transition-duration: 2s;
 }
 
 footer hr {
