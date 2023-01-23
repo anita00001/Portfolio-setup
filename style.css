@@ -1060,9 +1060,3 @@ footer .bottom_line {
     display: none;
   }
 }
-
-/* @media all and (min-width: 1380px) {
-  .frame {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-} */
