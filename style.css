@@ -155,7 +155,6 @@ hr {
 }
 
 .feature .img {
-  border: 2px solid red;
   width: 100%;
   height: 240px;
   background-image: url(images_2/ImgPlaceholder.png);
@@ -177,7 +176,6 @@ hr {
 }
 
 .describe {
-  border: 2px solid red;
   width: 90%;
 }
 
