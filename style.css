@@ -507,8 +507,10 @@ footer {
 
 footer hr {
   margin: 0;
-  padding: 1rem;
+  padding: 0 1rem;
   width: 90%;
+  border: 1px solid #dfe1e6;
+  background-color: #dfe1e6;
 }
 
 footer .bottom_line {
