@@ -17,35 +17,11 @@ header {
 
 .toolbar {
   width: 100%;
-  height: 92px;
+  height: auto;
   padding: 1em 0;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   background: #3c3a39;
-}
-
-.time {
-  width: 50%;
-  margin-left: 1.5rem;
-  margin-top: 1rem;
-  top: calc(50% - 16px / 2 + 0.5px);
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: -0.28px;
-  color: #fff;
-}
-
-.bar {
-  margin-left: auto;
-  width: 30%;
-  height: 11.34px;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  background-image: url(images/battery-wifi-phone.png);
-  background-position: top right;
-  background-repeat: no-repeat;
 }
 
 .logo {
@@ -507,8 +483,10 @@ footer {
 
 footer hr {
   margin: 0;
-  padding: 1rem;
+  padding: 0 1rem;
   width: 90%;
+  border: 1px solid #dfe1e6;
+  background-color: #dfe1e6;
 }
 
 footer .bottom_line {
