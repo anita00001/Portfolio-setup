@@ -171,36 +171,38 @@ hr {
 }
 
 .feature {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 3rem;
-  padding: 0 2rem;
 }
 
 .feature .img {
+  border: 2px solid red;
   width: 100%;
-  height: 237px;
+  height: 240px;
   background-image: url(images_2/ImgPlaceholder.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: top center;
   animation: 3s infinite alternate slidein;
 }
 
 @keyframes slidein {
   from {
-    margin-left: 40%;
+    margin-top: 5%;
     width: 100%;
   }
 
   to {
-    margin-left: 0%;
+    margin-bottom: 5%;
     width: 100%;
   }
 }
 
 .describe {
-  padding: 1rem;
+  border: 2px solid red;
+  width: 90%;
 }
 
 .describe h2 {
@@ -499,10 +501,15 @@ button:hover {
   margin-bottom: 5rem;
 }
 
-footer hr {
-  padding: 1rem;
+footer {
   width: 100%;
-  height: 1px;
+}
+
+footer hr {
+  margin: 0;
+  padding: 1rem;
+  width: 90%;
+  height: 0px;
 }
 
 footer .bottom_line {
@@ -1055,8 +1062,8 @@ footer .bottom_line {
   }
 }
 
-@media all and (min-width: 1380px) {
+/* @media all and (min-width: 1380px) {
   .frame {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+} */
