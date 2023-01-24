@@ -78,11 +78,17 @@ Clone this repository to your desired folder:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Author 1** **Anita Sharma**
 
 - GitHub: [@anita00001](https://github.com/anita00001)
 - Twitter: [@anitaa_sharmaa](https://twitter.com/anitaa_sharmaa)
 - LinkedIn: [anitaa-sharmaa](https://www.linkedin.com/in/anitaa-sharmaa/)
+
+ **Author 2** **Muhammad Usman Aslam**
+
+- GitHub: [@githubhandle](https://github.com/MuhammadUsmanAslam)
+- Twitter: [@twitterhandle](https://twitter.com/M_Usman_Aslam)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/muhammad-usman-aslam)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
