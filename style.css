@@ -262,7 +262,7 @@ button:disabled {
   background-repeat: round;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   border: none;
 }
 
@@ -434,7 +434,7 @@ button:disabled {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .form-input {
@@ -598,7 +598,7 @@ footer .bottom_line {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-self: left;
+    align-self: flex-start;
     background: #e5e5e5;
     align-items: center;
   }
@@ -620,7 +620,7 @@ footer .bottom_line {
     font-weight: 400;
     font-size: 40px;
     line-height: 130%;
-    align-items: left;
+    align-items: flex-start;
     color: #091e42;
   }
 
@@ -800,7 +800,7 @@ footer .bottom_line {
   .card1:hover,
   .card4:hover {
     /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img1-1.png); */
-    background: none #f3f3f3, url(images_4/card-bg-img1.png);
+    background: url(images_4/card-bg-img1.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -923,7 +923,7 @@ footer .bottom_line {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: left;
+    align-items: flex-start;
     padding-top: 2rem;
     margin: 0;
   }
@@ -966,7 +966,7 @@ footer .bottom_line {
   .form {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     margin-top: 8rem;
   }
 
