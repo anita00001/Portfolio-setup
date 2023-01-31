@@ -5,7 +5,16 @@ const portfolioicon = document.querySelector('#portfolio-icon');
 const abouticon = document.querySelector('#about-icon');
 const contacticon = document.querySelector('#contact-icon');
 
-const changeIcon = function (icon) {
+// const changeIcon = function (icon) {
+//   icon.classList.toggle('fa-times');
+//   icon.classList.toggle('change-menu');
+//   icon.classList.toggle('change-menu-color');
+//   logoId.classList.toggle('change-logo');
+//   openmenuId.classList.toggle('change-open_menu');
+// };
+
+
+function changeIcon(icon){ 
   icon.classList.toggle('fa-times');
   icon.classList.toggle('change-menu');
   icon.classList.toggle('change-menu-color');
