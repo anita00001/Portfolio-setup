@@ -57,7 +57,7 @@ header {
   position: relative;
   left: 85%;
   transition: 0.5s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 7vw;
 }
 
 .change-menu-color {
@@ -91,7 +91,8 @@ header {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 10vw;
+  letter-spacing: 0.5vw;
   line-height: 138%;
 }
 
@@ -367,7 +368,6 @@ button:disabled {
   font-family: 'Crete Round', sans-serif;
   margin: 2em 0 0.5em 0;
   text-align: left;
-  height: 5rem;
   color: #ff6b00;
   font-style: normal;
   font-weight: 400;
