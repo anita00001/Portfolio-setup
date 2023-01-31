@@ -1,38 +1,38 @@
-const menuiconId = document.querySelector('#menu-icon');
+const menuIconId = document.querySelector('#menu-icon');
 const logoId = document.querySelector('#logo');
-const openmenuId = document.querySelector('#open_menu');
-const portfolioicon = document.querySelector('#portfolio-icon');
-const abouticon = document.querySelector('#about-icon');
-const contacticon = document.querySelector('#contact-icon');
+const openMenuId = document.querySelector('#open_menu');
+const portfolioIcon = document.querySelector('#portfolio-icon');
+const aboutIcon = document.querySelector('#about-icon');
+const contactIcon = document.querySelector('#contact-icon');
 
-menuiconId.addEventListener('click', () => {
-  menuiconId.classList.toggle('fa-times');
-  menuiconId.classList.toggle('change-menu');
-  menuiconId.classList.toggle('change-menu-color');
+menuIconId.addEventListener('click', () => {
+  menuIconId.classList.toggle('fa-times');
+  menuIconId.classList.toggle('change-menu');
+  menuIconId.classList.toggle('change-menu-color');
   logoId.classList.toggle('change-logo');
-  openmenuId.classList.toggle('change-open_menu');
+  openMenuId.classList.toggle('change-open_menu');
 });
 
-portfolioicon.addEventListener('click', () => {
-  menuiconId.classList.remove('change-menu-color');
-  menuiconId.classList.remove('fa-times');
-  menuiconId.classList.remove('change-menu');
+portfolioIcon.addEventListener('click', () => {
+  menuIconId.classList.remove('change-menu-color');
+  menuIconId.classList.remove('fa-times');
+  menuIconId.classList.remove('change-menu');
   logoId.classList.remove('change-logo');
-  openmenuId.classList.remove('change-open_menu');
+  openMenuId.classList.remove('change-open_menu');
 });
 
-abouticon.addEventListener('click', () => {
-  menuiconId.classList.remove('change-menu-color');
-  menuiconId.classList.remove('fa-times');
-  menuiconId.classList.remove('change-menu');
+aboutIcon.addEventListener('click', () => {
+  menuIconId.classList.remove('change-menu-color');
+  menuIconId.classList.remove('fa-times');
+  menuIconId.classList.remove('change-menu');
   logoId.classList.remove('change-logo');
-  openmenuId.classList.remove('change-open_menu');
+  openMenuId.classList.remove('change-open_menu');
 });
 
-contacticon.addEventListener('click', () => {
-  menuiconId.classList.remove('change-menu-color');
-  menuiconId.classList.remove('fa-times');
-  menuiconId.classList.remove('change-menu');
+contactIcon.addEventListener('click', () => {
+  menuIconId.classList.remove('change-menu-color');
+  menuIconId.classList.remove('fa-times');
+  menuIconId.classList.remove('change-menu');
   logoId.classList.remove('change-logo');
-  openmenuId.classList.remove('change-open_menu');
+  openMenuId.classList.remove('change-open_menu');
 });
