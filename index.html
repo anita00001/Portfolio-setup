@@ -13,12 +13,13 @@
 
 <body>
   <main>
+
     <header>
       <a id="logo" class="logo" href="#" aria-label="logo">A N I T A</a>
       <nav>
         <a class="menu" href="#" aria-label="Menu"><i id="menu-icon" class="fa-solid fa-bars" onclick="changeIcon(this)"></i></a>
         <ul id="open_menu" class="open_menu">
-          <li><a href="#" aria-label="Portfolio" id="portfolio-icon">Portfolio</a></li>
+          <li><a href="#works" aria-label="Portfolio" id="portfolio-icon">Portfolio</a></li>
           <li><a href="#about_me" aria-label="About" id="about-icon">About</a></li>
           <li><a href="#contact_form" aria-label="Contact" id="contact-icon">Contact</a></li>
           <li><a href="#social_media" aria-label="Social Media"><i class="fa-regular fa-envelope"></i></a></li>
@@ -45,7 +46,7 @@
       </ul>
     </section>
 
-    <section class="works">
+    <section id="works" class="works">
       <section class="title">
         <h2>My Recent Works</h2>
         <hr>
@@ -148,7 +149,7 @@
       </section>
     </section>
 
-    <section class="about_me">
+    <section id="about_me" class="about_me">
       <section class="description">
         <h2>About me</h2>
         <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my
@@ -204,7 +205,7 @@
       </section>
     </section>
 
-    <section class="contact_form">
+    <section id="contact_form" class="contact_form">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form class="form" action="https://formspree.io/f/xwkjpljd" method="post">
         <ul class="form-input">
@@ -218,7 +219,7 @@
         <button class="submit">Get in touch</button>
       </form>
     </section>
-    <footer>
+    <footer id="social_media">
       <hr class="footer-hr">
       <ul class="social_media">
         <li><a href="https://github.com/anita00001" aria-label="Github"><i class="fa-brands fa-github"></i></li>
@@ -234,7 +235,7 @@
       <div class="bottom_line"></div>
     </footer>
   </main>
-  <script src="/index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
