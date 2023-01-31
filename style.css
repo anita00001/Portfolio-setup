@@ -301,7 +301,7 @@ button:disabled {
 .card {
   width: 100%;
   height: auto;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_2/Bg_ImgCard.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Bg_ImgCard.png);
   background-repeat: round;
   display: flex;
   flex-direction: column;
@@ -388,7 +388,7 @@ button:disabled {
 
 .resume {
   width: 100%;
-  background-image: url(images_2/Bg_ImgAbout.png);
+  background-image: url(images/Bg_ImgAbout.png);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
@@ -611,7 +611,7 @@ footer .bottom_line {
     gap: 3em;
     padding-top: 12rem;
     padding-bottom: 16rem;
-    background-image: url(images_4/Illustration-header.png);
+    background-image: url(images/Illustration-header.png);
     background-position: top right;
     background-repeat: no-repeat;
   }
@@ -836,43 +836,42 @@ footer .bottom_line {
 
   .card1,
   .card4 {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img1-1.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/card-bg-img1-1.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card2,
   .card5 {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img2.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/card-bg-img2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card3,
   .card6 {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img3.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/card-bg-img3.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card1:hover,
   .card4:hover {
-    /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images_4/card-bg-img1-1.png); */
-    background: url(images_4/card-bg-img1.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images/card-bg-img1-1.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card2:hover,
   .card5:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images_4/card-bg-img2.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images/card-bg-img2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card3:hover,
   .card6:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 200%, rgb(237, 237, 242) 200%), url(images_4/card-bg-img3.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 200%, rgb(237, 237, 242) 200%), url(images/card-bg-img3.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -888,7 +887,7 @@ footer .bottom_line {
     background: #1c1a19;
     display: flex;
     flex-direction: column;
-    background-image: url(images_4/About-bg-img.png);
+    background-image: url(images/About-bg-img.png);
     background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 6rem;
