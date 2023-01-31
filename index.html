@@ -14,13 +14,13 @@
 <body>
   <main>
     <header>
-      <a class="logo" href="#" aria-label="logo">A N I T A</a>
+      <a id="logo" class="logo" href="#" aria-label="logo">A N I T A</a>
       <nav>
-        <a class="menu" href="#" aria-label="Menu"><i class="fa-solid fa-bars"></i></a>
-        <ul class="open_menu">
-          <li><a href="#" aria-label="Portfolio">Portfolio</a></li>
-          <li><a href="#about_me" aria-label="About">About</a></li>
-          <li><a href="#contact_form" aria-label="Contact">Contact</a></li>
+        <a class="menu" href="#" aria-label="Menu"><i id="menu-icon" class="fa-solid fa-bars" onclick="changeIcon(this)"></i></a>
+        <ul id="open_menu" class="open_menu">
+          <li><a href="#" aria-label="Portfolio" id="portfolio-icon">Portfolio</a></li>
+          <li><a href="#about_me" aria-label="About" id="about-icon">About</a></li>
+          <li><a href="#contact_form" aria-label="Contact" id="contact-icon">Contact</a></li>
           <li><a href="#social_media" aria-label="Social Media"><i class="fa-regular fa-envelope"></i></a></li>
         </ul>
       </nav>
@@ -234,6 +234,7 @@
       <div class="bottom_line"></div>
     </footer>
   </main>
+  <script src="/index.js"></script>
 </body>
 
 </html>
