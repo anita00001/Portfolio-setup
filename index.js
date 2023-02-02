@@ -13,26 +13,15 @@ menuIconId.addEventListener('click', () => {
   openMenuId.classList.toggle('change-open_menu');
 });
 
-portfolioIcon.addEventListener('click', () => {
-  menuIconId.classList.remove('change-menu-color');
-  menuIconId.classList.remove('fa-times');
-  menuIconId.classList.remove('change-menu');
-  logoId.classList.remove('change-logo');
-  openMenuId.classList.remove('change-open_menu');
-});
-
-aboutIcon.addEventListener('click', () => {
-  menuIconId.classList.remove('change-menu-color');
-  menuIconId.classList.remove('fa-times');
-  menuIconId.classList.remove('change-menu');
-  logoId.classList.remove('change-logo');
-  openMenuId.classList.remove('change-open_menu');
-});
-
-contactIcon.addEventListener('click', () => {
-  menuIconId.classList.remove('change-menu-color');
-  menuIconId.classList.remove('fa-times');
-  menuIconId.classList.remove('change-menu');
-  logoId.classList.remove('change-logo');
-  openMenuId.classList.remove('change-open_menu');
-});
+let navBarArray = [portfolioIcon, aboutIcon, contactIcon]
+for (let i = 0; i < navBarArray.length; i++) {
+  navBarArray.forEach((items) => {
+    items.addEventListener('click', () => {
+      menuIconId.classList.remove('fa-times');
+      menuIconId.classList.remove('change-menu');
+      menuIconId.classList.remove('change-menu-color');
+      logoId.classList.remove('change-logo');
+      openMenuId.classList.remove('change-open_menu');
+    });
+  });
+}
