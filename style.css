@@ -201,13 +201,11 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: 0.7s ease-in-out;  
+  transition: 0.7s ease-in-out;
   width: 90vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
-  visibility: hidden;
-  opacity: 0;
   z-index: 10;
   border: 1px solid #dfe1e6;
   border-radius: 10px;
@@ -215,10 +213,8 @@ header {
   padding: 0 1rem 1rem 1rem;
 }
 
-.modal-active {
-  transform: translate(-50%, -50%) scale(1);
-  visibility: visible;
-  opacity: 1;
+.modal-close {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-desktop {
@@ -260,7 +256,7 @@ header {
   font-size: inherit;
   background: inherit;
   transition-duration: 0.5s;
-  height: fit-content;
+  height: auto;
 }
 
 .tech-list {
@@ -318,7 +314,7 @@ header {
 
 .see-project,
 .see-source {
-  height: fit-content;
+  height: auto;
   width: fit-content;
 }
 
@@ -495,7 +491,7 @@ button:disabled {
 }
 
 .card button {
-  width: auto;
+  width: 100%;
 }
 
 .about_me {
@@ -835,34 +831,32 @@ footer .bottom_line {
     box-shadow: none;
   }
 
-  /* Style Popup : Desktop Version Starts*/
+  /* Style Popup : Desktop Version Starts */
 
   .modal {
     width: 80vw;
     height: 80vh;
     border: 1px solid #ebecf0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
   }
-  
+
   .modal-header {
     font-family: 'Crete Round', sans-serif;
   }
-  
-.modal-mobile {
+
+  .modal-mobile {
     display: none;
   }
 
-.modal-desktop {
+  .modal-desktop {
     display: block;
   }
-  
+
   .modal-header h2 {
     padding: 0;
     font-weight: 400;
   }
-  
+
   .tech-list {
     padding: 1rem 0 2rem 0;
   }
@@ -871,7 +865,7 @@ footer .bottom_line {
     font-weight: 500;
     font-size: 1rem;
   }
-  
+
   .modal-body {
     min-height: 60vh;
     max-height: 60vh;
@@ -879,37 +873,36 @@ footer .bottom_line {
     gap: 1rem;
     bottom: 2rem;
   }
-  
+
   .bg-img-modal {
     max-width: 55%;
     height: 90%;
   }
 
-  
-.modal-description {
-  display: flex;
-  flex-direction: column;
-  height: 90%;
-}
+  .modal-description {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
 
-.modal-description p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 150%;
-  color: #344563;
-  padding: 0;
-}
+  .modal-description p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: #344563;
+    padding: 0;
+  }
 
-.see-modal-button {
-  width: auto;
-  display: flex;
-  justify-content: left;
-  gap: 1rem;
-}
+  .see-modal-button {
+    width: auto;
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+  }
 
-  /* Style Popup : Desktop Version  Ends*/
+  /* Style Popup : Desktop Version  Ends */
 
   .feature {
     width: 80%;
