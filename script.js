@@ -158,7 +158,7 @@ cardButton.forEach((cardButtonItem, index) => {
         <section class="modal-description">
           <p>${items.p}</p>
           <div class="see-modal-button">
-            <a href="${items.liveLink}"><button class="see-project">${items.buttonOne}<i class="fa-regular fa-arrow-right"></i></button></a>
+            <a href="${items.liveLink}"><button class="see-project">${items.buttonOne} <img src="/images/Icon-see-live.png" alt="iconseeliveimg"></button></a>
             <a href="${items.sourceLink}"><button class="see-source">${items.buttonTwo}<i class="fa-brands fa-github"></i></button></a>
           </div>
         </section>
