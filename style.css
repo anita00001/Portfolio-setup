@@ -657,7 +657,11 @@ button:disabled {
   line-height: 24px;
   color: #3c3a39;
 }
-
+.form-validation {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: red;
+}
 .submit {
   width: fit-content;
   align-self: center;
