@@ -38,13 +38,13 @@ const closeButton = document.querySelector('.close-button');
 const modalContainer = document.querySelector('.modal');
 
 const cardButton = [
-document.querySelector('#see-project-button-0'),
-document.querySelector('#see-project-button-1'),
-document.querySelector('#see-project-button-2'),
-document.querySelector('#see-project-button-3'),
-document.querySelector('#see-project-button-4'),
-document.querySelector('#see-project-button-5'),
-document.querySelector('#see-project-button-6')
+  document.querySelector('#see-project-button-0'),
+  document.querySelector('#see-project-button-1'),
+  document.querySelector('#see-project-button-2'),
+  document.querySelector('#see-project-button-3'),
+  document.querySelector('#see-project-button-4'),
+  document.querySelector('#see-project-button-5'),
+  document.querySelector('#see-project-button-6')
 ]
 
 const projectInfo = [
@@ -168,20 +168,22 @@ cardButton.forEach((cardButtonItem, index) => {
           </div>
         </section>
       </div>
-    </div>`;  
+    </div>`;
+
+    const modalheader = document.querySelector('.modal-header')
+    modalheader.addEventListener('click', () => {
+      const modalContainer = document.querySelector('.modal');
+      modalContainer.classList.toggle('modal-close')
+      navBarSection.classList.remove('active');
+      headlineSection.classList.remove('active');
+      workSection.classList.remove('active');
+      aboutMeSection.classList.remove('active');
+      contactFormSection.classList.remove('active');
+      socialMediaSection.classList.remove('active');
+      let modalWindow = document.querySelector('body')
+      modalWindow.removeChild(modalWindow.lastElementChild);
+    });
   });
 });
 
-modalContainer.classList.toggle('modal-close');
-closeButton.addEventListener('click', () => {
-  const modalContainer = document.querySelector('.modal');
-  modalContainer.classList.toggle('modal-close')
-  navBarSection.classList.remove('active');
-  headlineSection.classList.remove('active');
-  workSection.classList.remove('active');
-  aboutMeSection.classList.remove('active');
-  contactFormSection.classList.remove('active');
-  socialMediaSection.classList.remove('active');
-  let modalWindow = document.querySelector('body')
-  modalWindow.removeChild(modalWindow.lastElementChild);
-});
+
