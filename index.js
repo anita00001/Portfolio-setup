@@ -40,18 +40,6 @@ const seeProjectButton = document.getElementsByClassName('see-project-button');
 const closeButton = document.querySelector('.close-button');
 const modalContainer = document.querySelector('.modal');
 
-//////////// Create an Array to store the information for the Pop-up window ////////////////
-const card0 = document.querySelector('#see-project-button-0');
-const card1 = document.querySelector('#see-project-button-1');
-const card2 = document.querySelector('#see-project-button-2');
-const card3 = document.querySelector('#see-project-button-3');
-const card4 = document.querySelector('#see-project-button-4');
-const card5 = document.querySelector('#see-project-button-5');
-const card6 = document.querySelector('#see-project-button-6');
-
-cardButton = [card0, card1, card2, card3, card4, card5, card6]
-/////////////////
-
 const projectInfo = [
   {
     mTitle: "Multi-Post Stories",
@@ -139,26 +127,37 @@ const projectInfo = [
 ]
 //////////////
 
+//////////// Create an Array to store the information for the Pop-up window ////////////////
+const card0 = document.querySelector('#see-project-button-0');
+const card1 = document.querySelector('#see-project-button-1');
+const card2 = document.querySelector('#see-project-button-2');
+const card3 = document.querySelector('#see-project-button-3');
+const card4 = document.querySelector('#see-project-button-4');
+const card5 = document.querySelector('#see-project-button-5');
+const card6 = document.querySelector('#see-project-button-6');
+
+cardButton = [card0, card1, card2, card3, card4, card5, card6];
+/////////////////
+
 ///// javascript object to display pop-up when clicked on cardButton ///////////////
 
-cardButton.forEach((cardButtonItem, index) => {
-  const items = projectInfo[index];
-  cardButtonItem.addEventListener('click', () => {
-
+for (let i=0; i<cardButton.length;i++){
+  
+  cardButton[i].addEventListener('click', () => {
     navBarSection.classList.toggle('active');
     headlineSection.classList.toggle('active');
     workSection.classList.toggle('active');
     aboutMeSection.classList.toggle('active');
     contactFormSection.classList.toggle('active');
     socialMediaSection.classList.toggle('active');
-
-    const modalWindow = document.querySelector('body');
-    const section = document.createElement('section');
-    modalWindow.appendChild(section);
-    section.innerHTML = `<div class="modal" id="modal">
+    projectInfo.forEach((items, index) => {
+      // const items = projectInfo[index];
+      const modalWindow = document.querySelector('body');
+      const section = document.createElement('section');
+      modalWindow.appendChild(section);
+      section.innerHTML = `<div class="modal">
       <div class="modal-header">
         <h2 class="modal-mobile">${items.mTitle}</h2>
-        <h2 class="modal-desktop">${items.dTitle}</h2>
         <button class="close-button">&times;</button>
       </div>
       <div class="tech-list">
@@ -176,16 +175,36 @@ cardButton.forEach((cardButtonItem, index) => {
           </div>
         </section>
       </div>
-    </div>`;  
-  });
-  
-});
-  modalContainer.classList.toggle('modal-active');
-
-  closeButton.addEventListener('click', () => {
-    const modalContainer = document.querySelector('.modal');
-    modalContainer.classList.remove('modal')
-
+     </div>`;  
+      const heading1 = document.querySelector('.modal-mobile');
+      if (cardButton[i] === card0) {
+        heading1.innerHTML = `${projectInfo[0].mTitle}`;
+      }
+      if (cardButton[i] === card1) {
+        heading1.innerHTML = `${projectInfo[1].mTitle}`;
+      }
+      if (cardButton[i] === card2) {
+        heading1.innerHTML = `${projectInfo[2].mTitle}`;
+      }
+      if (cardButton[i] === card3) {
+        heading1.innerHTML = `${projectInfo[3].mTitle}`;
+      }
+      if (cardButton[i] === card4) {
+        heading1.innerHTML = `${projectInfo[4].mTitle}`;
+      }
+      if (cardButton[i] === card5) {
+        heading1.innerHTML = `${projectInfo[5].mTitle}`;
+      }
+      if (cardButton[i] === card6) {
+        heading1.innerHTML = `${projectInfo[6].mTitle}`;
+      }
+    });
+    const modal = document.querySelector('.modal');
+    const closeButton = document.querySelector('.close-button');
+    modal.classList.toggle('modal-active');
+    closeButton.addEventListener('click', () => {
+    const modal = document.querySelector('.modal');
+    modal.classList.remove('modal-active')
     navBarSection.classList.remove('active');
     headlineSection.classList.remove('active');
     workSection.classList.remove('active');
@@ -195,4 +214,8 @@ cardButton.forEach((cardButtonItem, index) => {
 
     let modalWindow = document.querySelector('body')
     modalWindow.removeChild(modalWindow.lastElementChild);
+    });
   });
+}
+
+  

@@ -200,12 +200,14 @@ header {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(1);
   transition: 0.7s ease-in-out;  
   width: 90vw;
   height: 90vh;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
+  opacity: 0;
   z-index: 10;
   border: 1px solid #dfe1e6;
   border-radius: 10px;
@@ -215,6 +217,8 @@ header {
 
 .modal-active {
   transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-desktop {
