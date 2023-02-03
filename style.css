@@ -659,7 +659,7 @@ button:disabled {
 }
 
 .form-validation {
-  padding: 1rem;
+  margin-bottom: 5rem;
   font-size: 1.5rem;
   color: red;
 }
@@ -668,7 +668,6 @@ button:disabled {
   width: fit-content;
   align-self: center;
   padding: 12px;
-  margin-bottom: 5rem;
 }
 
 footer {
@@ -1297,7 +1296,6 @@ footer .bottom_line {
     align-self: flex-start;
     padding: 12px;
     margin-left: 1.5rem;
-    margin-bottom: 5rem;
   }
 
   footer .bottom_line {
