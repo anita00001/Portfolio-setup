@@ -180,3 +180,18 @@ cardButton.forEach((cardButtonItem, index) => {
     });
   });
 });
+
+////////////// contact-form validation //////////
+
+function formValidation(e) {
+  const email = document.querySelector('#youremail');
+  if (email.value !== email.value.toLowerCase()) {
+    document.querySelector('.form-validation').innerHTML = `* Invalid Email !!! All character on the email should be in lowercase !!*`;
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}
+
+const form = document.forms['form'];
+form.addEventListener('submit', formValidation);
+
