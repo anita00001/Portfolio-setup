@@ -13,8 +13,8 @@ menuIconId.addEventListener('click', () => {
   openMenuId.classList.toggle('change-open_menu');
 });
 
-const navBarArray = [portfolioIcon, aboutIcon, contactIcon]
-for (let i = 0; i < navBarArray.length; i=i+1) {
+const navBarArray = [portfolioIcon, aboutIcon, contactIcon];
+for (let i = 0; i < navBarArray.length; i += 1) {
   navBarArray.forEach((items) => {
     items.addEventListener('click', () => {
       menuIconId.classList.remove('fa-times');
@@ -81,8 +81,8 @@ const projectInfo = [
   },
 
   {
-    mTitle: "Profesional Art Printing Data",
-    dTitle: "Website Protfolio",
+    mTitle: 'Profesional Art Printing Data',
+    dTitle: 'Website Protfolio',
     techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     backgroundImg: 'images/modal-bg-3-6.png',
     p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
@@ -123,7 +123,7 @@ const projectInfo = [
     backgroundImg: 'images/modal-bg-3-6.png',
     p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     buttonOne: 'See Live',
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
     buttonTwo: 'See Source',
     sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
   },
