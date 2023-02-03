@@ -157,7 +157,7 @@ for (let i=0; i<cardButton.length;i++){
       modalWindow.appendChild(section);
       section.innerHTML = `<div class="modal">
       <div class="modal-header">
-        <h2 class="modal-mobile">${items.mTitle}</h2>
+        <h2 class="modal-title">${items.mTitle}</h2>
         <button class="close-button">&times;</button>
       </div>
       <div class="tech-list">
@@ -176,7 +176,7 @@ for (let i=0; i<cardButton.length;i++){
         </section>
       </div>
      </div>`;  
-      const heading1 = document.querySelector('.modal-mobile');
+      const heading1 = document.querySelector('.modal-title');
       if (cardButton[i] === card0) {
         heading1.innerHTML = `${projectInfo[0].mTitle}`;
       }
