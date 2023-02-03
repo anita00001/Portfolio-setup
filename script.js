@@ -181,8 +181,6 @@ cardButton.forEach((cardButtonItem, index) => {
   });
 });
 
-////////////// contact-form validation //////////
-
 function formValidation(e) {
   const email = document.querySelector('#youremail');
   if (email.value !== email.value.toLowerCase()) {
