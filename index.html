@@ -207,18 +207,20 @@
 
     <section id="contact_form" class="contact_form">
       <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <form class="form" action="https://formspree.io/f/xwkjpljd" method="post">
+      <form id="form" class="form" action="https://formspree.io/f/xwkjpljd" name="contact-form" method="post">
         <ul class="form-input">
-          <li><input type="name" name="User name" placeholder="Full Name" max="30" required></li>
+          <li><input id="yourname" type="name" name="User name" placeholder="Full Name" max="30" required></li>
           <hr>
-          <li><input type="email" name="Email" placeholder="Email address" required></li>
+          <li><input id="youremail" type="email" name="Email" placeholder="Email address" required></li>
           <hr>
-          <li><textarea type="text" name="Message" placeholder="Enter text here" maxlength="500" rows="5"
+          <li><textarea id="yourmessage" type="text" name="Message" placeholder="Enter text here" maxlength="500" rows="5"
               required></textarea></li>
         </ul>
-        <button class="submit">Get in touch</button>
+        <button class="submit" type="submit" value="submit">Get in touch</button>
+        <span class="form-validation"></span>
       </form>
     </section>
+
     <footer id="social_media">
       <hr class="footer-hr">
       <ul class="social_media">

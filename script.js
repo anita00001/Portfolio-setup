@@ -180,3 +180,15 @@ cardButton.forEach((cardButtonItem, index) => {
     });
   });
 });
+
+function formValidation(e) {
+  const email = document.querySelector('#youremail');
+  if (email.value !== email.value.toLowerCase()) {
+    document.querySelector('.form-validation').innerHTML = '* Invalid Email !!! <br> All character on the email should be in lowercase !!*';
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}
+
+const form = document.getElementById('form');
+form.addEventListener('submit', formValidation);

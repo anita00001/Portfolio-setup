@@ -658,11 +658,16 @@ button:disabled {
   color: #3c3a39;
 }
 
+.form-validation {
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  color: red;
+}
+
 .submit {
   width: fit-content;
   align-self: center;
   padding: 12px;
-  margin-bottom: 5rem;
 }
 
 footer {
@@ -1291,7 +1296,6 @@ footer .bottom_line {
     align-self: flex-start;
     padding: 12px;
     margin-left: 1.5rem;
-    margin-bottom: 5rem;
   }
 
   footer .bottom_line {
