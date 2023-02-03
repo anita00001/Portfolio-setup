@@ -13,8 +13,8 @@ menuIconId.addEventListener('click', () => {
   openMenuId.classList.toggle('change-open_menu');
 });
 
-let navBarArray = [portfolioIcon, aboutIcon, contactIcon]
-for (let i = 0; i < navBarArray.length; i++) {
+const navBarArray = [portfolioIcon, aboutIcon, contactIcon]
+for (let i = 0; i < navBarArray.length; i=i+1) {
   navBarArray.forEach((items) => {
     items.addEventListener('click', () => {
       menuIconId.classList.remove('fa-times');
@@ -32,10 +32,6 @@ const workSection = document.querySelector('#work');
 const aboutMeSection = document.querySelector('#about_me');
 const contactFormSection = document.querySelector('#contact_form');
 const socialMediaSection = document.querySelector('#social_media');
-const seeProjectButton = document.getElementsByClassName('see-project-button');
-
-const closeButton = document.querySelector('.close-button');
-const modalContainer = document.querySelector('.modal');
 
 const cardButton = [
   document.querySelector('#see-project-button-0'),
@@ -44,99 +40,98 @@ const cardButton = [
   document.querySelector('#see-project-button-3'),
   document.querySelector('#see-project-button-4'),
   document.querySelector('#see-project-button-5'),
-  document.querySelector('#see-project-button-6')
-]
+  document.querySelector('#see-project-button-6'),
+];
 
 const projectInfo = [
   {
-    mTitle: "Multi-Post Stories",
-    dTitle: "Keeping track of hundreds of components website",
-    techList: ["HTML", "Bootstrap", "Ruby on Rails"],
-    backgroundImg: "images/modal-bg.jfif",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window",
+    mTitle: 'Multi-Post Stories',
+    dTitle: 'Keeping track of hundreds of components website',
+    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    backgroundImg: 'images/modal-bg.jfif',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
   },
 
   {
-    mTitle: "Profesional Art Printing Data",
-    dTitle: "Profesional Art Printing Data More",
-    techList: ["HTML", "Bootstrap", "Ruby"],
-    backgroundImg: "images/modal-bg-1-4.png",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window",
+    mTitle: 'Profesional Art Printing Data',
+    dTitle: 'Profesional Art Printing Data More',
+    techList: ['HTML', 'Bootstrap', 'Ruby'],
+    backgroundImg: 'images/modal-bg-1-4.png',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
   },
 
   {
-    mTitle: "Profesional Art Printing Data",
-    dTitle: "Data Dashboard Healthcare",
-    techList: ["HTML", "Bootstrap", "Ruby on Rails"],
-    backgroundImg: "images/modal-bg-2-5.png",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window",
-  },
-
-  {
-    mTitle: "Profesional Art Printing Data",
-    dTitle: "Website Protfolio",
-    techList: ["HTML", "Bootstrap", "Ruby on Rails"],
-    backgroundImg: "images/modal-bg-3-6.png",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window",
-  },
-
-  {
-    mTitle: "Profesional Art Printing Data",
-    dTitle: "Profesional Art Printing Data More",
-    techList: ["HTML", "Bootstrap", "Ruby on Rails"],
-    backgroundImg: "images/modal-bg-1-4.png",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window",
-  },
-
-  {
-    mTitle: "Profesional Art Printing Data",
-    dTitle: "Data Dashboard Healthcare",
-    techList: ["HTML", "Bootstrap", "Ruby on Rails"],
-    backgroundImg: "images/modal-bg-2-5.png",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
-    liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window",
+    mTitle: 'Profesional Art Printing Data',
+    dTitle: 'Data Dashboard Healthcare',
+    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    backgroundImg: 'images/modal-bg-2-5.png',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
   },
 
   {
     mTitle: "Profesional Art Printing Data",
     dTitle: "Website Protfolio",
-    techList: ["HTML", "Bootstrap", "Ruby on Rails"],
-    backgroundImg: "images/modal-bg-3-6.png",
-    p: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    buttonOne: "See Live",
+    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    backgroundImg: 'images/modal-bg-3-6.png',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+  },
+
+  {
+    mTitle: 'Profesional Art Printing Data',
+    dTitle: 'Profesional Art Printing Data More',
+    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    backgroundImg: 'images/modal-bg-1-4.png',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+  },
+
+  {
+    mTitle: 'Profesional Art Printing Data',
+    dTitle: 'Data Dashboard Healthcare',
+    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    backgroundImg: 'images/modal-bg-2-5.png',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
+    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+  },
+
+  {
+    mTitle: 'Profesional Art Printing Data',
+    dTitle: 'Website Protfolio',
+    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    backgroundImg: 'images/modal-bg-3-6.png',
+    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    buttonOne: 'See Live',
     liveLink: "https://anita00001.github.io/Portfolio-setup/",
-    buttonTwo: "See Source",
-    sourceLink: "https://github.com/anita00001/Portfolio-setup/tree/popup-window"
-  }
-]
+    buttonTwo: 'See Source',
+    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+  },
+];
 
 cardButton.forEach((cardButtonItem, index) => {
   const items = projectInfo[index];
   cardButtonItem.addEventListener('click', () => {
-
     navBarSection.classList.toggle('active');
     headlineSection.classList.toggle('active');
     workSection.classList.toggle('active');
@@ -170,20 +165,18 @@ cardButton.forEach((cardButtonItem, index) => {
       </div>
     </div>`;
 
-    const modalheader = document.querySelector('.modal-header')
+    const modalheader = document.querySelector('.modal-header');
     modalheader.addEventListener('click', () => {
       const modalContainer = document.querySelector('.modal');
-      modalContainer.classList.toggle('modal-close')
+      modalContainer.classList.toggle('modal-close');
       navBarSection.classList.remove('active');
       headlineSection.classList.remove('active');
       workSection.classList.remove('active');
       aboutMeSection.classList.remove('active');
       contactFormSection.classList.remove('active');
       socialMediaSection.classList.remove('active');
-      let modalWindow = document.querySelector('body')
+      const modalWindow = document.querySelector('body');
       modalWindow.removeChild(modalWindow.lastElementChild);
     });
   });
 });
-
-
