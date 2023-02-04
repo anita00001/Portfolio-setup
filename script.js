@@ -1,10 +1,11 @@
+/////// mobile menu toggle starts ////////////
 const menuIconId = document.querySelector('#menu-icon');
 const logoId = document.querySelector('#logo');
 const openMenuId = document.querySelector('#open_menu');
 const portfolioIcon = document.querySelector('#portfolio-icon');
 const aboutIcon = document.querySelector('#about-icon');
 const contactIcon = document.querySelector('#contact-icon');
-
+/////// open menu ///////////
 menuIconId.addEventListener('click', () => {
   menuIconId.classList.toggle('fa-times');
   menuIconId.classList.toggle('change-menu');
@@ -13,6 +14,7 @@ menuIconId.addEventListener('click', () => {
   openMenuId.classList.toggle('change-open_menu');
 });
 
+/////////// close mobile menu ////////
 const navBarArray = [portfolioIcon, aboutIcon, contactIcon];
 for (let i = 0; i < navBarArray.length; i += 1) {
   navBarArray.forEach((items) => {
@@ -26,6 +28,7 @@ for (let i = 0; i < navBarArray.length; i += 1) {
   });
 }
 
+// ////////// Modal starts ////////////
 const navBarSection = document.querySelector('#nav-bar');
 const headlineSection = document.querySelector('#headline');
 const workSection = document.querySelector('#work');
@@ -33,6 +36,7 @@ const aboutMeSection = document.querySelector('#about_me');
 const contactFormSection = document.querySelector('#contact_form');
 const socialMediaSection = document.querySelector('#social_media');
 
+////////////// See project buttons on each card ////////////
 const cardButton = [
   document.querySelector('#see-project-button-0'),
   document.querySelector('#see-project-button-1'),
@@ -43,6 +47,7 @@ const cardButton = [
   document.querySelector('#see-project-button-6'),
 ];
 
+/////////// Array of Project information ///////////////
 const projectInfo = [
   {
     mTitle: 'Multi-Post Stories',
@@ -129,16 +134,19 @@ const projectInfo = [
   },
 ];
 
+/////////// Link Buttons with their respective Project Information
 cardButton.forEach((cardButtonItem, index) => {
   const items = projectInfo[index];
+  /////////// Open Modal //////////////
   cardButtonItem.addEventListener('click', () => {
+    /////// Blur background when click event happens ///////////
     navBarSection.classList.toggle('active');
     headlineSection.classList.toggle('active');
     workSection.classList.toggle('active');
     aboutMeSection.classList.toggle('active');
     contactFormSection.classList.toggle('active');
     socialMediaSection.classList.toggle('active');
-
+///////////// Modal HTML ////////////////
     const modalWindow = document.querySelector('body');
     const section = document.createElement('section');
     modalWindow.appendChild(section);
@@ -165,6 +173,7 @@ cardButton.forEach((cardButtonItem, index) => {
       </div>
     </div>`;
 
+    ////////// Close the modal ////////////////
     const modalheader = document.querySelector('.modal-header');
     modalheader.addEventListener('click', () => {
       const modalContainer = document.querySelector('.modal');
@@ -181,6 +190,7 @@ cardButton.forEach((cardButtonItem, index) => {
   });
 });
 
+/////////// Form Validation ///////////////
 function formValidation(e) {
   const email = document.querySelector('#youremail');
   if (email.value !== email.value.toLowerCase()) {
@@ -192,3 +202,19 @@ function formValidation(e) {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', formValidation);
+
+/////////// Local Storage ////////// 
+const userInfo = document.querySelector('.form');
+userInfo.addEventListener('input', () => {
+  const info = {
+    name: document.querySelector('#yourname').value,
+    email: document.querySelector('#youremail').value,
+    message: document.querySelector('#yourmessage').value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(info));
+});
+
+let formObject = JSON.parse(localStorage.getItem('userInfo'));
+document.querySelector('#yourname').value = formObject.name;
+document.querySelector('#youremail').value = formObject.email;
+document.querySelector('#yourmessage').value = formObject.message;
