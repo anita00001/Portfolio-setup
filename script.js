@@ -15,7 +15,7 @@ menuIconId.addEventListener('click', () => {
   openMenuId.classList.toggle('change-open_menu');
 });
 
-/////////// close mobile menu ////////
+/// /// /// /// close mobile menu /// /// ///
 const navBarArray = [portfolioIcon, aboutIcon, contactIcon];
 for (let i = 0; i < navBarArray.length; i += 1) {
   navBarArray.forEach((items) => {
@@ -29,7 +29,7 @@ for (let i = 0; i < navBarArray.length; i += 1) {
   });
 }
 
-// ////////// Modal starts ////////////
+/// /// /// /// Modal starts /// /// /// ///
 const navBarSection = document.querySelector('#nav-bar');
 const headlineSection = document.querySelector('#headline');
 const workSection = document.querySelector('#work');
@@ -37,7 +37,7 @@ const aboutMeSection = document.querySelector('#about_me');
 const contactFormSection = document.querySelector('#contact_form');
 const socialMediaSection = document.querySelector('#social_media');
 
-////////////// See project buttons on each card ////////////
+/// /// /// /// See project buttons on each card /// /// /// ///
 const cardButton = [
   document.querySelector('#see-project-button-0'),
   document.querySelector('#see-project-button-1'),
@@ -48,7 +48,7 @@ const cardButton = [
   document.querySelector('#see-project-button-6'),
 ];
 
-/////////// Array of Project information ///////////////
+/// /// /// /// Array of Project information /// /// /// /// ///
 const projectInfo = [
   {
     mTitle: 'Multi-Post Stories',
@@ -135,19 +135,19 @@ const projectInfo = [
   },
 ];
 
-/////////// Link Buttons with their respective Project Information
+/// /// /// /// Link Buttons with their respective Project Information /// /// ///
 cardButton.forEach((cardButtonItem, index) => {
   const items = projectInfo[index];
-  /////////// Open Modal //////////////
+/// /// /// /// Open Modal /// /// /// ///
   cardButtonItem.addEventListener('click', () => {
-    /////// Blur background when click event happens ///////////
+/// /// Blur background when click event happens /// /// ///
     navBarSection.classList.toggle('active');
     headlineSection.classList.toggle('active');
     workSection.classList.toggle('active');
     aboutMeSection.classList.toggle('active');
     contactFormSection.classList.toggle('active');
     socialMediaSection.classList.toggle('active');
-///////////// Modal HTML ////////////////
+/// /// /// /// Modal HTML /// /// /// /// ///
     const modalWindow = document.querySelector('body');
     const section = document.createElement('section');
     modalWindow.appendChild(section);
@@ -174,7 +174,7 @@ cardButton.forEach((cardButtonItem, index) => {
       </div>
     </div>`;
 
-    ////////// Close the modal ////////////////
+/// /// /// Close the modal /// /// /// /// ///
 
     const modalheader = document.querySelector('.modal-header');
     modalheader.addEventListener('click', () => {
@@ -192,8 +192,7 @@ cardButton.forEach((cardButtonItem, index) => {
   });
 });
 
-/////////// Form Validation ///////////////
-
+/// /// /// /// Form Validation /// /// /// /// ///
 function formValidation(e) {
   const email = document.querySelector('#youremail');
   if (email.value !== email.value.toLowerCase()) {
@@ -205,7 +204,7 @@ function formValidation(e) {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', formValidation);
-/////////// Local Storage ////////// 
+/// /// /// /// Local Storage /// /// ///
 const userInfo = document.querySelector('.form');
 userInfo.addEventListener('input', () => {
   const info = {
