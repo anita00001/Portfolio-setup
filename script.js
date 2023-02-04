@@ -1,11 +1,14 @@
 /////// mobile menu toggle starts ////////////
+
 const menuIconId = document.querySelector('#menu-icon');
 const logoId = document.querySelector('#logo');
 const openMenuId = document.querySelector('#open_menu');
 const portfolioIcon = document.querySelector('#portfolio-icon');
 const aboutIcon = document.querySelector('#about-icon');
 const contactIcon = document.querySelector('#contact-icon');
+
 /////// open menu ///////////
+
 menuIconId.addEventListener('click', () => {
   menuIconId.classList.toggle('fa-times');
   menuIconId.classList.toggle('change-menu');
@@ -174,6 +177,7 @@ cardButton.forEach((cardButtonItem, index) => {
     </div>`;
 
     ////////// Close the modal ////////////////
+
     const modalheader = document.querySelector('.modal-header');
     modalheader.addEventListener('click', () => {
       const modalContainer = document.querySelector('.modal');
@@ -191,6 +195,7 @@ cardButton.forEach((cardButtonItem, index) => {
 });
 
 /////////// Form Validation ///////////////
+
 function formValidation(e) {
   const email = document.querySelector('#youremail');
   if (email.value !== email.value.toLowerCase()) {
@@ -202,7 +207,6 @@ function formValidation(e) {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', formValidation);
-
 /////////// Local Storage ////////// 
 const userInfo = document.querySelector('.form');
 userInfo.addEventListener('input', () => {
@@ -214,7 +218,7 @@ userInfo.addEventListener('input', () => {
   localStorage.setItem('userInfo', JSON.stringify(info));
 });
 
-let formObject = JSON.parse(localStorage.getItem('userInfo'));
+const formObject = JSON.parse(localStorage.getItem('userInfo'));
 document.querySelector('#yourname').value = formObject.name;
 document.querySelector('#youremail').value = formObject.email;
 document.querySelector('#yourmessage').value = formObject.message;
