@@ -202,7 +202,7 @@ function formValidation(e) {
 }
 
 const form = document.getElementById('form');
-form.addEventListener('submit', formValidation);
+form.addEventListener('submit', formValidation());
 
 /// /// /// /// Local Storage /// /// ///
 const userInfo = document.querySelector('.form');
