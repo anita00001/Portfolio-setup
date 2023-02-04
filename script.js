@@ -207,12 +207,12 @@ form.addEventListener('submit', formValidation);
 /// /// /// /// Local Storage /// /// ///
 const userInfo = document.querySelector('.form');
 let formObject = JSON.parse(localStorage.getItem('userInfo'));
-if(!formObject) {
-  formObject = {
-  name: '',
-  email: '',
-  textareamessage: '',
-}
+if (!formObject) {
+    formObject = {
+    name: '',
+    email: '',
+    textareamessage: '',
+  };
 }
 document.querySelector('#yourname').value = formObject.name;
 document.querySelector('#youremail').value = formObject.email;
@@ -226,4 +226,3 @@ userInfo.addEventListener('input', () => {
   };
   localStorage.setItem('userInfo', JSON.stringify(info));
 });
-
