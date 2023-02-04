@@ -138,16 +138,16 @@ const projectInfo = [
 /// /// /// /// Link Buttons with their respective Project Information /// /// ///
 cardButton.forEach((cardButtonItem, index) => {
   const items = projectInfo[index];
-/// /// /// /// Open Modal /// /// /// ///
+  /// /// /// /// Open Modal /// /// /// ///
   cardButtonItem.addEventListener('click', () => {
-/// /// Blur background when click event happens /// /// ///
+    /// /// Blur background when click event happens /// /// ///
     navBarSection.classList.toggle('active');
     headlineSection.classList.toggle('active');
     workSection.classList.toggle('active');
     aboutMeSection.classList.toggle('active');
     contactFormSection.classList.toggle('active');
     socialMediaSection.classList.toggle('active');
-/// /// /// /// Modal HTML /// /// /// /// ///
+    /// /// /// /// Modal HTML /// /// /// /// ///
     const modalWindow = document.querySelector('body');
     const section = document.createElement('section');
     modalWindow.appendChild(section);
@@ -174,8 +174,7 @@ cardButton.forEach((cardButtonItem, index) => {
       </div>
     </div>`;
 
-/// /// /// Close the modal /// /// /// /// ///
-
+    /// /// /// Close the modal /// /// /// /// ///
     const modalheader = document.querySelector('.modal-header');
     modalheader.addEventListener('click', () => {
       const modalContainer = document.querySelector('.modal');
