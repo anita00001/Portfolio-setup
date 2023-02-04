@@ -203,8 +203,21 @@ function formValidation(e) {
 
 const form = document.getElementById('form');
 form.addEventListener('submit', formValidation);
+
 /// /// /// /// Local Storage /// /// ///
 const userInfo = document.querySelector('.form');
+let formObject = JSON.parse(localStorage.getItem('userInfo'));
+if (!formObject) {
+  formObject = {
+    name: '',
+    email: '',
+    textareamessage: '',
+  };
+}
+document.querySelector('#yourname').value = formObject.name;
+document.querySelector('#youremail').value = formObject.email;
+document.querySelector('#yourmessage').value = formObject.message;
+
 userInfo.addEventListener('input', () => {
   const info = {
     name: document.querySelector('#yourname').value,
@@ -213,8 +226,3 @@ userInfo.addEventListener('input', () => {
   };
   localStorage.setItem('userInfo', JSON.stringify(info));
 });
-
-const formObject = JSON.parse(localStorage.getItem('userInfo'));
-document.querySelector('#yourname').value = formObject.name;
-document.querySelector('#youremail').value = formObject.email;
-document.querySelector('#yourmessage').value = formObject.message;
