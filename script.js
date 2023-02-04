@@ -1,5 +1,4 @@
-/////// mobile menu toggle starts ////////////
-
+/// /// mobile menu toggle starts /// /// /// /// 
 const menuIconId = document.querySelector('#menu-icon');
 const logoId = document.querySelector('#logo');
 const openMenuId = document.querySelector('#open_menu');
@@ -7,8 +6,7 @@ const portfolioIcon = document.querySelector('#portfolio-icon');
 const aboutIcon = document.querySelector('#about-icon');
 const contactIcon = document.querySelector('#contact-icon');
 
-/////// open menu ///////////
-
+/// /// open menu /// /// /// /// 
 menuIconId.addEventListener('click', () => {
   menuIconId.classList.toggle('fa-times');
   menuIconId.classList.toggle('change-menu');
