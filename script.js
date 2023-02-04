@@ -208,7 +208,7 @@ form.addEventListener('submit', formValidation);
 const userInfo = document.querySelector('.form');
 let formObject = JSON.parse(localStorage.getItem('userInfo'));
 if (!formObject) {
-    formObject = {
+  formObject = {
     name: '',
     email: '',
     textareamessage: '',
