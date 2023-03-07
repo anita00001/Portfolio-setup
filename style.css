@@ -336,7 +336,6 @@ header {
 }
 
 .feature img {
-  height: auto;
   width: 100%;
   transition: transform 0.5s ease-in;
 }
@@ -444,7 +443,7 @@ button:disabled {
 .card {
   width: 100%;
   height: auto;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/Bg_ImgCard.png);
+  /* background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/todo.JPG); */
   background-repeat: round;
   display: flex;
   flex-direction: column;
@@ -920,12 +919,13 @@ footer .bottom_line {
 
   .feature img {
     flex: 6;
-    height: 100%;
-    width: 100%;
+    height: 25rem;
+    width: 65%;
   }
 
   .describe {
     flex: 4;
+    width: 55%;
   }
 
   .describe h2 {
@@ -1057,16 +1057,18 @@ footer .bottom_line {
 
   .card1,
   .card4 {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/card-bg-img1-1.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/book-display.JPG);
     background-repeat: no-repeat;
+    background-position: 28% 0;
     background-size: cover;
   }
 
   .card2,
   .card5 {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/card-bg-img2.png);
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(images/locus-about.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 29% 0;
   }
 
   .card3,
@@ -1078,16 +1080,18 @@ footer .bottom_line {
 
   .card1:hover,
   .card4:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images/card-bg-img1-1.png);
+    background: url(images/book-display.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 28% 0;
   }
 
   .card2:hover,
   .card5:hover {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 100%, rgba(38, 38, 38, 1) 100%), url(images/card-bg-img2.png);
+    background: url(images/locus-about.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 29% 0;
   }
 
   .card3:hover,

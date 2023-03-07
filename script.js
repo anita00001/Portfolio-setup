@@ -51,39 +51,39 @@ const cardButton = [
 /// /// /// /// Array of Project information /// /// /// /// ///
 const projectInfo = [
   {
-    mTitle: 'Multi-Post Stories',
-    dTitle: 'Keeping track of hundreds of components website',
-    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    backgroundImg: 'images/modal-bg.jfif',
-    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    mTitle: 'To-Do List',
+    dTitle: 'Today To-Do List',
+    techList: ['HTML', 'CSS', 'JavaScript'],
+    backgroundImg: 'images/todo.JPG',
+    p: 'A to-do list app is a digital tool that allows users to create lists of tasks, edit and delete tasks, and track their progress as they complete items on their list.',
     buttonOne: 'See Live',
-    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    liveLink: 'https://anita00001.github.io/To-do-List/',
     buttonTwo: 'See Source',
-    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+    sourceLink: 'https://github.com/anita00001/To-do-List',
   },
 
   {
-    mTitle: 'Profesional Art Printing Data',
-    dTitle: 'Profesional Art Printing Data More',
-    techList: ['HTML', 'Bootstrap', 'Ruby'],
-    backgroundImg: 'images/modal-bg-1-4.png',
-    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    mTitle: 'My Awesome Book',
+    dTitle: 'My Awesome Book',
+    techList: ['HTML', 'CSS', 'JavaScript'],
+    backgroundImg: 'images/book-display.JPG',
+    p: 'The book managing app allows users to add entries for a book using the title and author name, reject duplicate entries, and delete books.',
     buttonOne: 'See Live',
-    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    liveLink: 'https://anita00001.github.io/My-awesome-book/',
     buttonTwo: 'See Source',
-    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+    sourceLink: 'https://github.com/anita00001/My-awesome-book',
   },
 
   {
-    mTitle: 'Profesional Art Printing Data',
-    dTitle: 'Data Dashboard Healthcare',
-    techList: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    backgroundImg: 'images/modal-bg-2-5.png',
-    p: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
+    mTitle: 'LOCUS Exhibition',
+    dTitle: 'LOCUS: Technical Exhibition',
+    techList: ['HTML', 'CSS', 'JavaScript'],
+    backgroundImg: 'images/locus-about.JPG',
+    p: 'The technical Exhibition page includes event details about the engineering projects, allowing participants to register for the competition.',
     buttonOne: 'See Live',
-    liveLink: 'https://anita00001.github.io/Portfolio-setup/',
+    liveLink: 'https://anita00001.github.io/Exhibition-Page/',
     buttonTwo: 'See Source',
-    sourceLink: 'https://github.com/anita00001/Portfolio-setup/tree/popup-window',
+    sourceLink: 'https://github.com/anita00001/Exhibition-Page',
   },
 
   {
@@ -167,8 +167,8 @@ cardButton.forEach((cardButtonItem, index) => {
         <section class="modal-description">
           <p>${items.p}</p>
           <div class="see-modal-button">
-            <a href="${items.liveLink}"><button class="see-project">${items.buttonOne} <img src="/images/Icon-see-live.png" alt="iconseeliveimg"></button></a>
-            <a href="${items.sourceLink}"><button class="see-source">${items.buttonTwo}<i class="fa-brands fa-github"></i></button></a>
+            <a target="_blank" href="${items.liveLink}"><button class="see-project">${items.buttonOne} <img src="/images/Icon-see-live.png" alt="iconseeliveimg"></button></a>
+            <a target="_blank" href="${items.sourceLink}"><button class="see-source">${items.buttonTwo}<i class="fa-brands fa-github"></i></button></a>
           </div>
         </section>
       </div>
